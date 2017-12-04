@@ -1,3 +1,36 @@
+<?php
+include ("dbconnect.php");
+$query = "SELECT level FROM login";
+$result = mysql_query($query) or die(mysql_error());
+
+$query1 = "SELECT camp FROM login";
+$result1 = mysql_query($query1) or die(mysql_error());
+
+$query2 = "SELECT user,pass FROM login";
+$result2 = mysql_query($query2) or die(mysql_error());
+
+$option = "";
+
+while ($row = mysql_fetch_array($result)) {
+
+       $group = $row['level'];
+       $option .= "<OPTION VALUE =\"$group\">".$group;
+       }
+
+$option1 = "";
+
+while ($row1 = mysql_fetch_array($result1)) {
+
+       $campaign = $row1['camp'];
+       $option1 .= "<OPTION VALUE =\"$campaign\">".$campaign;
+       }
+
+while($row2 = mysql_fetch_array( $result2 )){
+       $user =  $row2['user'];
+       $pass =  $row2['pass'];
+       }
+?>
+
 <html>
 <head><title>Member Login</title></head>
 <body>
