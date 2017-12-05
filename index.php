@@ -7,7 +7,7 @@ include ("dbconnect.php");
 
 <html>
 <head>
-<title>Member Login</title>
+<title>DXC.Technology RTPA Member's Login</title>
 <style>
 div {
     background-color: black;

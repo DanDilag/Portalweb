@@ -33,7 +33,7 @@ while($row2 = mysql_fetch_array( $result2 )){
 
 ?>
 <html>
-<head><title>Member Login</title>
+<head><title>DXC.Technology RTPA Member's Login</title>
 <style>
 div {
     background-color: black;
